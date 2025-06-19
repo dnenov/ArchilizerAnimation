@@ -2,7 +2,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/animation/",
+  base: "./",
   server: {
     open: true,
   },
