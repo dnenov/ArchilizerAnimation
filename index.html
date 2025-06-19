@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archilizer Intro Animation</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: white;
+      font-family: sans-serif;
+    }
+
+    #three-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    canvas {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- This is what your script expects -->
+  <div id="three-container">
+    <!-- Optional debug logger -->
+    <!-- <div style="position: absolute; top: 10px; right: 40%; z-index: 90;">
+      <p id="logger">Camera Z: 0</p>
+      <p id="logger1">Target Z: 0</p>
+    </div> -->
+  </div>
+
+  <!-- Vite mount point (keep it!) -->
+  <div id="app"></div>
+
+  <!-- Load your Three.js animation -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

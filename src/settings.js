@@ -1,0 +1,37 @@
+import * as THREE from "three";
+import FakeGlowMaterial from "./fakeGlowMaterial.js";
+
+export const settings = {
+  ringRadius: 1.33,
+  transitionDuration: 0.6, // gsap transitions - smaller is tighter
+  numSmall: 500,
+  numLargeDots: 400,
+  smallDotSize: 0.4,
+  largeDotSize: 0.8,
+  sOrbitRadius: 0.004,
+  lOrbitRadius: 0.001,
+  sOrbitVariance: 0.52,
+  lOrbitVariance: 0.2,
+  sBaseOrbitSpeed: 0.3,
+  lBaseOrbitSpeed: 0.2,
+  targetZ: 8,
+  targetRotation: 0,
+  minZ: 2,
+  maxZ: 8,
+  minRotation: 0,
+  maxRotation: 0.5,
+  dotGeometry: new THREE.PlaneGeometry(0.1, 0.1),
+  dotMaterial: new FakeGlowMaterial({}),
+  dotSpawnMaterial: new FakeGlowMaterial({ opacity: 0 }),
+  reflectiveMaterial: null,
+  minSpeedFactor: 0.3,
+  maxSpeedFactor: 1.0,
+  minOrbitMultiplier: 0.5,
+  maxOrbitMultiplier: 10.0,
+  animationProgress: 0,
+  minScrollY: 0,
+  maxScrollY: 1000,
+  currentRingRadius: 2,
+  totalStages: 4,
+  maxScrollY: 500,
+};
